@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPortfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/icons/logo.png" alt="Logo de MiPortfolio">
+            <span>Mi<span class="destacado">Portfolio</span></span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-menu" aria-label="Cambiar tema">
+            <span class="disenio">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <article class="contenido-hero">
+                <span class="saludo">¡Hola! Soy</span>
+                <br>
+                <span class="name">MiuuDev</span>
+                <br>
+                <span class="trabajo">Desarrolladora Web</span>
+                <p>Creo experiencias digitales modernas, rápidas y accesibles.
+                    Me especializo en HTML, CSS, JavaScript y diseño de interfaces.</p>
+
+                <div class="botones-hero">
+                    <a href="#proyectos" class="btn-proyectos">Ver proyectos</a>
+                    <a href="#contacto" class="btn-contacto">Contáctame</a>
+                </div>
+
+                <div class="redes">
+                    <a href="https://github.com/miuu-dev">
+                        <img src="images/icons/github.png" alt="GitHub">
+                    </a>
+
+                    <a href="#">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="#">
+                        <img src="images/icons/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="images/icons/twitter.png" alt="Twitter">
+                    </a>
+                </div>
+            </article>
+
+            <figure class="imagen-hero">
+                <img src="images/icons/yo.png" alt="Foto de perfil de MiuuDev">
+            </figure>
+        </section>
+
+
+        <section class="sobreMiHab">
+            <section class="sobre-mi" id="sobre-mi">
+                <div class="titulo">
+                    <img src="images/icons/usuario.png" alt="Icono de sobre mí">
+                    <span class="texto">Sobre mí</span>
+                </div>
+
+                <span class="descripcion">
+                    Soy desarrolladora web apasionada por crear sitios bonitos,
+                    funcionales y enfocados en el usuario. Me encanta aprender
+                    nuevas tecnologías y convertir ideas en productos reales.
+                </span>
+
+                <br>
+
+                <button class="btn-sobremi">
+                    <span class="btn-text">
+                        Más sobre mí
+                    </span>
+                </button>
+            </section>
+
+            <section class="skills-section" id="habilidades">
+                <div class="titulo">
+                    <img src="images/icons/habilidades.png" alt="Icono de habilidades"> <span class="texto">Mis
+                        habilidades</span>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Columna 1 -->
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <img src="images/icons/html.png" alt="HTML">
+                            <span class="lenguajeTitulo">HTML</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 95%;"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="images/icons/css.png" alt="CSS">
+                            <span class="lenguajeTitulo">CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 90%;"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="images/icons/js.png" alt="JavaScript" class="js">
+                            <span class="lenguajeTitulo">JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 25%;"></div>
+                            </div>
+                            <span>25%</span>
+                        </div>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <img src="images/icons/github.png" alt="GitHub">
+                            <span class="lenguajeTitulo">Git & GitHub</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 80%;"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="images/icons/figma.png" alt="Figma">
+                            <span class="lenguajeTitulo">Figma</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 70%;"></div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="images/icons/canva.png" alt="Canva">
+                            <span class="lenguajeTitulo">Canva</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: 70%;"></div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <div class="encabezado">
+                <div class="titulo">
+                    <img src="images/icons/carpeta.png" alt="Icono de carpeta">
+                    <span class="texto">Proyectos destacados</span>
+                </div>
+
+                <div class="proyectos-enlace">
+                    <span class="enlace"><a href="https://github.com/miuu-dev/WebLab/tree/main">Ver todos los proyectos →</a></span>
+                </div>
+            </div>
+
+            <div class="proyectos-grid">
+                <div class="proyecto-item">
+                    <img src="images/portada/portadaDashboard.png" alt="Dashboard de Ventas" class="proyecto-imagen-fondo">
+                    <div class="proyecto-info">
+                        <h3>Dashboard de Ventas</h3>
+                        <p>Visualización el rendimiento de ventas y las tendencias comerciales.</p>
+                        <div class="lenguajes">
+                            <span class="lenguaje">HTML, CSS, JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto-item">
+                    <img src="images/portada/enproceso.png" alt="En proceso..." class="proyecto-imagen-fondo">
+                    <div class="proyecto-info">
+                        <h3>En proceso...</h3>
+                        <p>En proceso...</p>
+                        <div class="lenguajes">
+                            <span class="lenguaje">...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto-item">
+                    <img src="images/portada/enproceso.png" alt="En proceso..." class="proyecto-imagen-fondo">
+                    <div class="proyecto-info">
+                        <h3>En proceso...</h3>
+                        <p>En proceso...</p>
+                        <div class="lenguajes">
+                            <span class="lenguaje">...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify UI Clone</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-controls">
+            <button><i class="fa-solid fa-less-than"></i></button>
+            <button><i class="fa-solid fa-greater-than"></i></button>
+        </div>
+
+        <div class="header-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="¿Qué quieres reproducir?" class="input-search">
+        </div>
+
+        <div class="header-profile-actions">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-people-group"></i>
+            <div class="header-profile">
+                <img src="images/fotoPerfiles/miFoto.jpg" alt="Foto de perfil del usuario">
+            </div>
+        </div>
+    </header>
+
+
+
+    <aside class="sidebar">
+        <i class="fa-solid fa-ellipsis"></i>
+
+
+        <nav class="sidebar-nav">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Tu biblioteca</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section class="sidebar-playlist">
+            <div class="sidebar-header">
+                <h2>PlayLists</h2>
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <ul class="sidebar-playlists">
+                <li><a href="#">Canciones que te gustan</a></li>
+                <li><a href="#">Focus</a></li>
+                <li><a href="#">Lo-Fi beats</a></li>
+                <li><a href="#">Chill Vibes</a></li>
+                <li><a href="#">Workout Mix</a></li>
+                <li><a href="#">Road Trip 2024</a></li>
+                <li><a href="#">Éxitos de los 2000</a></li>
+            </ul>
+        </section>
+
+
+        <section class="sidebar-profile">
+            <img src="images/fotoPerfiles/miFoto.jpg" alt="Foto de perfil del usuario">
+            <span class="sidebar-profile-name">María López</span>
+            <button>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </section>
+    </aside>
+
+
+
+    <main class="main">
+        <h1>¡Hola hola!</h1>
+
+
+        <section class="main-featured">
+            <ul class="playlist-list">
+                <li class="playlist-card">
+                    <img src="images/portadasCanciones/featured/1.jpg" alt="Primera playlist hecho para mi">
+                    <span class="titulo-playlist">Discover Weekly</span>
+                    <p>Hecho para ti</p>
+                </li>
+
+                <li class="playlist-card">
+                    <img src="images/portadasCanciones/featured/2.jpg" alt="Segunda playlist hecho para mi">
+                    <span class="titulo-playlist">Éxitos del momento</span>
+                    <p>Playlist - Spotify</p>
+                </li>
+
+                <li class="playlist-card">
+                    <img src="images/portadasCanciones/featured/3.jpg" alt="Tercera playlist hecho para mi">
+                    <span class="titulo-playlist">Lo-fi Beats</span>
+                    <p>Playlist - Spotify</p>
+                </li>
+
+                <li class="playlist-card">
+                    <img src="images/portadasCanciones/featured/4.jpg" alt="Cuarta playlist hecho para mi">
+                    <span class="titulo-playlist">Chill Vibes</span>
+                    <p>Playlist - Spotify</p>
+                </li>
+
+                <li class="playlist-card">
+                    <img src="images/portadasCanciones/featured/5.jpg" alt="Quinta playlist hecho para mi">
+                    <span class="titulo-playlist">Rock clásico</span>
+                    <p>Playlist - Spotify</p>
+                </li>
+
+                <li class="playlist-card">
+                    <img src="images/portadasCanciones/featured/6.jpg" alt="Sexta playlist hecho para mi">
+                    <span class="titulo-playlist">Workout mix</span>
+                    <p>Playlist - Spotify</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="main-madeforme">
+            <div class="main-madeforme-titulo">
+                <h2>Hecho para mí</h2>
+                <div class="main-recently-link"><a href="#">Mostrar todo</a></div>
+            </div>
+
+            <div class="main-madeforme-playlists">
+                <ul class="playlist-list">
+                    <li>
+                        <img src="images/portadasCanciones/madeforme/1.jpg" alt="Primera playlist hecha para mi">
+                        <span class="description">Con Morat, Sebastian Yatra, Camilo y ...</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/madeforme/2.jpg" alt="Segunda playlist hecha para mi">
+                        <span class="description">Con Linkin Park, Bring Me The Horizon, Three Days Grace y ...</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/madeforme/3.jpg" alt="Tercera playlist hecha para mi">
+                        <span class="description">Con BTS, Stray Kids, SEVENTEEN y ...</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/madeforme/4.jpg" alt="Cuarta playlist hecha para mi">
+                        <span class="description">Con Álvaro Díaz, Feid, Rauw Alejandro y ...</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/madeforme/5.png" alt="Quinta playlist hecha para mi">
+                        <span class="description">Con The Weeknd, Bruno Mars, Dua Lipa y ...</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="main-recently">
+            <div class="main-recently-titulo">
+                <h2>Escuchado recientemente</h2>
+                <div class="main-recently-link"><a href="#">Mostrar todo</a></div>
+            </div>
+
+            <div class="main-recently-playlists">
+                <ul class="playlist-list">
+                    <li>
+                        <img src="images/portadasCanciones/recently/1.jpg"
+                            alt="Primera playlist escuchada recientemente">
+                        <span class="artista">3AM</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/recently/2.png"
+                            alt="Segunda playlist escuchada recientemente">
+                        <span class="artista">Linkin Park</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/recently/3.jpg"
+                            alt="Tercera playlist escuchada recientemente">
+                        <span class="artista">Álvaro Díaz</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/recently/4.jpg"
+                            alt="Cuarta playlist escuchada recientemente">
+                        <span class="artista">CACHÉ</span>
+                    </li>
+
+                    <li class="playlist-card">
+                        <img src="images/portadasCanciones/recently/5.jpg"
+                            alt="Quinta playlist escuchada recientemente">
+                        <span class="artista">FERNANDOCOSTA</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-song-info">
+            <img src="images/portadasCanciones/escuchando.jpg" alt="Portada de la canción actual">
+            <div class="song-details">
+                <span class="song-title">Take Me Away</span>
+                <span class="song-artist">New Medicine</span>
+            </div>
+            <button class="footer-like-btn"><i class="fa-solid fa-heart"></i></button>
+        </div>
+
+
+        <div class="footer-player-controls">
+            <div class="player-buttons">
+                <button><i class="fa-solid fa-shuffle"></i></button>
+                <button><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play-pause-btn"><i class="fa-solid fa-pause"></i></button>
+                <button><i class="fa-solid fa-forward-step"></i></button>
+                <button><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div class="player-progress-bar">
+                <span class="current-time">1:03</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span class="total-time">2:17</span>
+            </div>
+        </div>
+
+
+        <div class="footer-extra-controls">
+            <button><i class="fa-solid fa-microphone-lines"></i></button>
+            <button><i class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-solid fa-computer"></i></button>
+            <button><i class="fa-solid fa-volume-high"></i></button>
+            <div class="volume-bar-container">
+                <div class="volume-bar-fill"></div>
+            </div>
+            <button><i class="fa-solid fa-expand"></i></button>
+        </div>
+    </footer>
+</body>
+
+</html>

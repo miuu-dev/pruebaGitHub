@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Ventas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <aside id="sidebar">
+        <a class="logo" href="dashboard.html">
+            <img src="images/icons/logo.png" alt="VentasPro">
+            <h1>VentasPro</h1>
+        </a>
+
+        <nav class="navegador">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <img src="images/icons/dashboard.png" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/ventas.png" alt="">
+                        <span>Ventas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/productos.png" alt="">
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/clientes.png" alt="">
+                        <span>Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/reportes.png" alt="">
+                        <span>Reportes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/configuracion.png" alt="">
+                        <span>Configuración</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="dashboard-header">
+            <div>
+                <h2>Dashboard de Ventas</h2>
+                <p>Resumen mensual</p>
+            </div>
+
+            <button type="button" aria-label="Exportar informe" class="btn">
+                <span class="icono">
+                    <img src="images/icons/exportar.png" alt="">
+                </span>
+                Exportar
+            </button>
+        </header>
+
+        <section class="stats">
+
+            <article class="card">
+                <h3>Ventas totales</h3>
+                <h2>48.250 €</h2>
+                <span>↑ +12%</span>
+            </article>
+
+            <article class="card">
+                <h3>Pedidos</h3>
+                <h2>1.248</h2>
+                <span>↑ +8%</span>
+            </article>
+
+            <article class="card">
+                <h3>Clientes nuevos</h3>
+                <h2>324</h2>
+                <span>↑ +15.7%</span>
+            </article>
+
+            <article class="card">
+                <h3>Ticket medio</h3>
+                <h2>38.28 €</h2>
+                <span>↑ 5.2%</span>
+            </article>
+        </section>
+
+        <section class="charts">
+            <article class="chart chart-ventas">
+                <h3>Ventas Totales</h3>
+                <canvas id="ventas">Tu navegador no soporta Canvas.</canvas>
+            </article>
+
+            <article class="chart chart-categorias">
+                <h3>Ventas por Categoría</h3>
+                <canvas id="categorias">Tu navegador no soporta Canvas.</canvas>
+            </article>
+
+            <article class="chart chart-products">
+                <h3>Productos Más Vendidos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Vendidos</th>
+                            <th>Ingresos</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Auriculares Inalámbricos</td>
+                            <td>Electrónica</td>
+                            <td>312</td>
+                            <td>9.360 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>Smartwatch Serie 5</td>
+                            <td>Electrónica</td>
+                            <td>245</td>
+                            <td>7.365 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>Zapatillas Running</td>
+                            <td>Deportes</td>
+                            <td>189</td>
+                            <td>4.725 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mochila Urbana</td>
+                            <td>Accesorios</td>
+                            <td>156</td>
+                            <td>3.120 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cafetera Expresso</td>
+                            <td>Hogar</td>
+                            <td>142</td>
+                            <td>2.840 €</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </article>
+
+            <article class="chart chart-canales">
+                <h3>Ventas por canal</h3>
+                <canvas id="canales">Tu navegador no soporta Canvas.</canvas>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
